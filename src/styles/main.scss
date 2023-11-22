@@ -1,13 +1,19 @@
 @import "utils/variables";
 @import "utils/breakpoints";
 @import "utils/mixins";
+@import "utils/functions";
 @import "utils/placeholders";
 
 @import "base/base";
 @import "base/fonts";
 
+@import "modules/menu";
+@import "modules/hero";
 @import "modules/button";
+@import "modules/book";
 
+@import "layouts/container";
 @import "layouts/header";
+@import "layouts/book-preview";
 
 @import "pages/home";
