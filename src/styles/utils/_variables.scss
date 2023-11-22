@@ -1,18 +1,20 @@
+//color
 $white: #ffffff;
-$z-indexes: (
-  "noscript",
-  "preloader",
-  "mobile-playlist-info",
-  "transition",
-  "modal",
-  "overlay",
-  "nav",
-  "canvas",
-  "menu",
-  "content",
-  "smoke",
-  "4",
-  "3",
-  "2",
-  "1"
-);
+$cool-grey-100: #232b34;
+$cool-grey-200: #363c49;
+$cool-yellow: #f09442;
+$cool-mystic: #e0e5eb;
+$cool-cornflower-blue: #b3bfff;
+
+$shadow-yellow: 0px 12px 35px 0px rgba(194, 97, 10, 0.4);
+$shadow-grey: 0px 20px 60px 0px rgba(54, 60, 73, 0.55);
+
+//fonts
+$font-inter: "Inter", sans-serif;
+$font-source-sans-pro: "Source Serif Pro", sans-serif;
+
+//Z index stacks
+//main stack
+$z-indexes: ("preloader", "transition", "4", "3", "2", "1");
+//other secondary
+$z-indexes-book-preview: ("view-all", "gradient");
