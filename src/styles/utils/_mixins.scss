@@ -16,11 +16,14 @@
   }
 }
 
-@mixin flex($direction: null, $align: center, $justify: center) {
+@mixin flex($direction: null, $align: center, $justify: center, $gap: null) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   @if ($direction) {
     flex-direction: $direction;
+  }
+  @if ($gap) {
+    gap: $gap;
   }
 }
