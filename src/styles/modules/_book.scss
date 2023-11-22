@@ -1,0 +1,35 @@
+.book {
+  @include flex($direction: column, $gap: 24px);
+  width: 165px;
+  list-style: none;
+  &__img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: linear-gradient(
+      180deg,
+      rgba(35, 43, 52, 0) 58.16%,
+      #232b34 100%
+    );
+  }
+  &__content {
+    @include flex($direction: column, $gap: 8px);
+  }
+  &__title {
+    color: $white;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: $font-inter;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.16px;
+  }
+  &__author {
+    color: $cool-cornflower-blue;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: $font-inter;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

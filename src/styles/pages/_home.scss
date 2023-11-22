@@ -1,3 +1,28 @@
 .home {
   position: relative;
 }
+.preview-heading {
+  color: #fff;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "liga" off;
+  font-family: $font-source-sans-pro;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 325px;
+}
+.preview-line {
+  width: 3px;
+  height: 80px;
+  background-color: $cool-mystic;
+}
+.view-all {
+  @include flex($direction: column, $gap: 10px);
+  padding: 8px;
+  color: $white;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: $font-inter;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
