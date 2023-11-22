@@ -1,0 +1,28 @@
+.menu {
+  width: 100%;
+  @include flex($justify: space-between);
+  &__left {
+    @include flex($justify: space-between, $gap: 64px);
+    @include media("<=desktop") {
+      @include flex($justify: space-between, $gap: 40px);
+    }
+  }
+  &__right {
+    @include flex();
+  }
+  &__logo {
+    width: 34px;
+    height: 30px;
+  }
+  &__link {
+    @include flex($justify: space-between, $gap: 8px);
+    color: $cool-grey-100;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: $font-inter;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    cursor: pointer;
+  }
+}
