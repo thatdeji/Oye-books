@@ -19,6 +19,14 @@ html,
 body {
   overflow-x: hidden;
 }
+body {
+  background-image: url("https://res.cloudinary.com/dexg5uy3d/image/upload/q_auto,f_auto/v1700655293/Artboard_1mdpi_1_tjnpdj.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: $font-inter;
+}
 button {
   background-color: transparent;
   border: none;
