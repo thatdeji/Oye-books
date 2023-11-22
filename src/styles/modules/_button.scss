@@ -1,3 +1,15 @@
 .button {
-  display: block;
+  @include flex($gap: 16px);
+  padding: 20px 40px;
+  border-radius: 4px;
+  background-color: $cool-yellow;
+  box-shadow: $shadow-yellow;
+  color: $white;
+  text-align: center;
+  font-family: $font-inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.16px;
 }
