@@ -1,4 +1,5 @@
 import Component from "../classes/Component";
+import { optimizeCloudinaryUrl } from "../utils/cloudinary";
 
 class Preloader extends Component {
   length: number;
@@ -19,7 +20,7 @@ class Preloader extends Component {
       [...this.elements.images].forEach((image) => {
         if (image instanceof HTMLImageElement) {
           const dataSrc = image?.getAttribute("data-src");
-          if (dataSrc) image.src = dataSrc;
+          if (dataSrc) image.src = optimizeCloudinaryUrl(dataSrc);
           image.onload = () => this.onAssetLoaded();
         }
       });
