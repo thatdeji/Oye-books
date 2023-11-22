@@ -1,0 +1,26 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin flex($direction: null, $align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  @if ($direction) {
+    flex-direction: $direction;
+  }
+}
