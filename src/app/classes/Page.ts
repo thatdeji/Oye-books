@@ -62,15 +62,18 @@ class Page extends EventEmitter {
         } else if (els?.length === 1) {
           this.elements[key] =
             this.element?.querySelector<HTMLElement>(entry) ?? null;
+        } else {
+          this.elements[key] =
+            this.element?.querySelectorAll<HTMLElement>(entry) ?? null;
         }
       }
     });
     this.createPreloaders();
   }
 
-  show() {
+  async show() {
     this.addEventListeners();
-
+    if (this.element instanceof HTMLElement) this.element.style.opacity = "1";
     return Promise.resolve();
   }
 
