@@ -34,6 +34,7 @@
 .l-book-preview-right-inner {
   @include flex($justify: flex-start, $align: flex-start, $gap: 48px);
   width: fit-content;
+  overflow-y: hidden;
 }
 .l-book-preview-right-view-all {
   position: absolute;
