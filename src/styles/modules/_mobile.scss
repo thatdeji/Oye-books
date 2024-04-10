@@ -1,0 +1,28 @@
+.mobile {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  margin: 0 auto;
+  @include flex($direction: column, $gap: 10px, $align: flex-start);
+  &__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: left;
+  }
+  &__subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    span {
+      font-size: 1.6rem;
+      display: inline-block;
+    }
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
