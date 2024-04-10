@@ -1,5 +1,22 @@
 .home {
   position: relative;
+  opacity: 0;
+  @media screen and (max-width: 1023px) {
+    & .l-mobile {
+      display: block;
+    }
+    & .l-desktop {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    & .l-mobile {
+      display: none;
+    }
+    & .l-desktop {
+      display: block;
+    }
+  }
 }
 .preview-heading {
   color: #fff;

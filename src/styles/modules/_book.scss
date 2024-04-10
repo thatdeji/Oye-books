@@ -1,9 +1,9 @@
 .book {
   @include flex($direction: column, $gap: 24px);
-  width: 165px;
+  width: 179px;
   list-style: none;
   &__img {
-    width: 100%;
+    width: 165px;
     height: 190px;
     object-fit: cover;
     background: linear-gradient(

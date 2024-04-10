@@ -10,6 +10,10 @@
     line-height: normal;
     letter-spacing: 0.64px;
     margin-bottom: 16px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+    }
   }
   &__subtitle {
     color: $cool-grey-200;
@@ -19,6 +23,10 @@
     line-height: normal;
     letter-spacing: 0.2px;
     margin-bottom: 40px;
+    overflow: hidden;
+    span {
+      display: inline-block;
+    }
   }
   &__cta {
     @include flex();
