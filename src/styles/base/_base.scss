@@ -19,6 +19,9 @@ html,
 body {
   overflow-x: hidden;
 }
+html.no-scroll {
+  overflow: hidden;
+}
 body {
   background-image: url("https://res.cloudinary.com/dexg5uy3d/image/upload/q_auto,f_auto/v1700655293/Artboard_1mdpi_1_tjnpdj.png");
   background-size: cover;
